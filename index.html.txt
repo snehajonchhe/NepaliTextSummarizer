@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Text Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>“नेपाली पाठ सारांश”</h1>
+    </header>
+
+    <div class="container">
+        <button class="title-button">Nepali Text Summarizer</button>
+        
+        <div class="input-container">
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            <textarea id="outputText" placeholder="Summary will appear here..." readonly></textarea>
+        </div>
+
+        <div class="upload-container">
+            <input type="file" id="fileInput" accept=".txt">
+            <label for="fileInput" class="upload-label">📂 Upload doc</label>
+        </div>
+
+        <button onclick="summarizeText()" class="summarize-btn">Summarize</button>
+    </div>
+
+    <!-- ✅ Transparent Nepali Flag as Background -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg" class="bg-flag" alt="Nepali Flag">
+
+    <script src="script.js"></script>
+</body>
+</html>
